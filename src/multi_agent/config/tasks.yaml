@@ -1,0 +1,56 @@
+news_task:
+  description: >-
+    ONLY use this task if the user is EXPLICITLY asking about current news, announcements, scholarships, job openings, or tenders.
+    Find recent news items related to: {query}.
+    DO NOT use this task for fee structures, department details, or admission criteria.
+  expected_output: |
+    A numbered list of recent news items:
+    - [Date] Title (URL)
+  agent: news_researcher
+
+
+research_task:
+  description: >-
+    Search the UOP internal knowledge base for factual information about: {query}.
+    This task handles: fee structures, admission criteria, merit lists, eligibility requirements, university rules, and history.
+    Provide precise facts (dates, names, numbers, amounts) using the user's language.
+    If not found in the knowledge base, return EXACTLY: NOT_FOUND.
+  expected_output: Factual answer or NOT_FOUND.
+  agent: researcher
+    
+
+homepage_task:
+  description: >-
+    Scan the UOP homepage and all administrative sections (Vice Chancellor, Examinations, IT Services, Controller, Admissions, Sports, Provost, etc.) for information related to: {query}.
+    Use this ONLY for administrative offices context, general homepage content, contact details, or current officials.
+    Extract text snippets and links relevant to the user query.
+  expected_output: Summary of any relevant information found on the homepage or administrative sections.
+  agent: homepage_scraper_agent
+
+
+department_task:  
+  description: >-
+    Retrieve academic STRUCTURE and rich profile information for: {query}.
+    Use this ONLY for department/institute queries (faculty members, programs, publications, alumni, pictures, department lists).
+    If user asks for an overview, provide a list of all faculties and their departments.
+    If a specific department is named, fetch its faculty members, programs, graduates, publications, and gallery in real-time based on the query keywords.
+    The output must strictly focus only on matching keywords relevant to the user query.
+    Do NOT handle fee structure queries — those belong to the research_task.
+  expected_output: Cleaned, deduplicated, and strictly query-relevant structured academic hierarchy or specific department data (Faculty, Programs, Graduates, Publications, Gallery).
+  agent: department_scraper_agent
+
+student_corner_task:
+  description: >-
+    Scan the UOP Student Corner subsections (Scholarships, Business Incubation, Distance Education, Sports, Bara Gali, Career Development, Digital Library, etc.) for information related to: {query}.
+    Use this ONLY for student corner context.
+    Extract cleaned, deduplicated, and strictly query-related snippets and links.
+  expected_output: Summary of any relevant information found in the Student Corner sections.
+  agent: student_corner_agent
+
+hostel_task:
+  description: >-
+    Scan the UOP Provost/Hostel sections for information about: {query}.
+    Use this ONLY for hostel and accommodation context, provost rules, conduct, and discipline.
+    Extract cleaned, deduplicated, and strictly query-related snippets and links.
+  expected_output: Summary of any relevant information found in the Hostel sections.
+  agent: hostel_agent

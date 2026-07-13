@@ -1,0 +1,50 @@
+# University of Peshawar - Key Information
+# This file serves as a placeholder for UoP-specific knowledge
+
+## Quick Facts
+- University Name: University of Peshawar (UoP)
+- Location: Peshawar, Khyber Pakhtunkhwa, Pakistan
+- Established: 1950
+- Type: Public Research University
+- Campus: Main Campus (Peshawar), Sub-Campuses (Abbottabad, Kohat)
+
+## Key Officials (verify from homepage for current)
+- Chancellor: Governor of Khyber Pakhtunkhwa (ex-officio)
+- Vice Chancellor: Chief administrative officer
+- Registrar: Head of administrative matters
+- Treasurer: Head of financial matters
+- Controller of Examinations: Head of examination affairs
+
+## Academic Structure
+- Multiple Faculties including:
+  - Faculty of Physical and Numerical Sciences
+  - Faculty of Biological Sciences
+  - Faculty of Humanities
+  - Faculty of Social Sciences
+  - Faculty of Arts
+  - Faculty of Education
+  - Faculty of Law
+  - Faculty of Pharmacy
+  - Faculty of Engineering and Technology
+
+## Admission Categories
+- A1: Open Merit (KP Domicile)
+- A2: District Merit (KP Domicile)
+- B: Non-KP Domicile
+- C: Foreign/Overseas
+
+## Programs Offered
+- Undergraduate: BS (4 years), Associate Degree (2 years)
+- Graduate: MS/MPhil (2 years)
+- Postgraduate: PhD (3-5 years)
+
+## Fee Structure (Approximate - verify from official sources)
+- A1 Category (Subsidized): PKR 50,000-60,000 per semester
+- B Category: PKR 100,000-150,000 per semester
+- C Category: PKR 200,000+ per semester
+
+## Important Links
+- Main Website: http://www.uop.edu.pk/
+- News Portal: http://www.uop.edu.pk/news/
+- Departments: http://www.uop.edu.pk/departments/
+- Admissions: Check main website for current admission portal
